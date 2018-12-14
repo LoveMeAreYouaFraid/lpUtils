@@ -1,5 +1,6 @@
 package com.utils.lipeng.lputils;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.setHeaderView(hv.getRoot());
         adapter.setFooterView(hh.getRoot());
         binding.rec.setAdapter(adapter);
+
+       startService(new Intent(this,myservice.class));
+
 //        adapter.notifyDataSetChanged();
 
 //        new DialogUtils(this)
