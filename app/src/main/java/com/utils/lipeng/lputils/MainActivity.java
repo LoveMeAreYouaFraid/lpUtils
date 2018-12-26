@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.rec.setLayoutManager(new StaggeredGridLayoutManager(1,LinearLayout.VERTICAL));
         list.add("00000");
+        list.add("00000");
         list.add("11111");
         list.add("2222");
         list.add("333");
